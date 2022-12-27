@@ -5,72 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/28bc02dfdf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="grid-container">
         <div id="sidebar">
             <div id="dashboardTitle">
-                <img src="" alt="">
+                
                 <h1 id="dashboardText">Dashboard</h1>
             </div>
             <div id="dashboardSection1">
                 <div id="home">
-                    <img src="" alt="home icon">
+                    <i class="fa-solid fa-house"></i>
                     <p>Home</p>
                 </div>
                 <div id="profile">
-                    <img src="" alt="Profile icon">
+                    <i class="fa-solid fa-user"></i>
                     <p>Profile</p>
                 </div>
                 <div id="messages">
-                    <img src="" alt="Messages icon">
+                    <i class="fa-solid fa-message"></i>
                     <p>Messages</p>
                 </div>
                 <div id="history">
-                    <img src="" alt="History icon">
+                    <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
                     <p>History</p>
                 </div>
                 <div id="tasks">
-                    <img src="" alt="Tasks icon">
+                    <i class="fa-solid fa-list-check"></i>
                     <p>Tasks</p>
                 </div>
                 <div id="communities">
-                    <img src="" alt="Communities icon">
+                    <i class="fa-solid fa-people-group"></i>
                     <p>Communities</p>
                 </div>
             </div>
             <div id="dashboardSection2">
                 <div id="settings">
-                    <img src="" alt="Settings icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                     <p>Settings</p>
                 </div>
                 <div id="support">
-                    <img src="" alt="Support icon">
+                    <i class="fa-solid fa-circle-info"></i>
                     <p>Support</p>
                 </div>
                 <div id="privacy">
-                    <img src="" alt="Privacy icon">
+                    <i class="fa-solid fa-lock"></i>
                     <p>Privacy</p>
                 </div>
             </div>
         </div>
         <div id="navbar">
             <div id="searchbar">
-                <img src="" alt="search icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" name="" id="">
             </div>
             <div id="alertsAndName"></div>
             <div id="profileAndName"></div>
-            <div id="3buttons"></div>
+            <div id="navButtons">
+                <button class="navBtn">New</button>
+                <button class="navBtn">Upload</button>
+                <button class="navBtn">Share</button>
+            </div>
         </div>
         <div id="maincontent">
             <h1>Your Projects</h1>
-            <div id="projects"></div>
+            <div id="projects">
+                <div class="project">
+                    <h3>Data Scrape and Sell</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+                <div class="project">
+                    <h3>Customer Support Outsourcing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+                <div class="project">
+                    <h3>Dropship wall art</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+                <div class="project">
+                    <h3>Thin baggy joggers business</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+                <div class="project">
+                    <h3>Real estate rebuild and sell</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+                <div class="project">
+                    <h3>Google Ads</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                        enim ad minim veniam.</p>
+                </div>
+            </div>
         </div>
         <div id="announcements">
             <h1>Announcements</h1>
-            <div id="announcementsContent"></div>
+            <div id="announcementsContent">
+                <div class="announcement">
+                    <p class="announcementHead">Maintenance!</p>
+                    <i class="fa-solid fa-paint-roller"></i>
+                    <P class="announcementSub">This maintenance destroys the database and management wants a rebuild in the weekend because devs hate free time.</P>
+                </div>
+                <div class="announcement">
+                    <p class="announcementHead">Update 12.2</p>
+                    <i class="fa-solid fa-bolt"></i>
+                    <P class="announcementSub">Rebuilt the database this weekend after last week's maintenance.</P>
+                </div>
+                <div class="announcement">
+                    <p class="announcementHead">Holiday Newsletter</p>
+                    <i class="fa-solid fa-newspaper"></i>
+                    <P class="announcementSub">Ho! Ho! Ho! Santaclause is back with an SQL injection!</P>
+                </div>
+            </div>
         </div>
         <div id="trending">
             <h1>Trending</h1>
