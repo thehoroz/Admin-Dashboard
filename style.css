@@ -4,8 +4,7 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-columns: minmax(100px, 200px) 4fr 1fr;
+    grid-template-columns: minmax(120px, 200px) 4fr 1fr;
 }
 
     #sidebar {
@@ -83,7 +82,7 @@ body {
 
     #announcements, #trending {
         display: grid;
-        grid-template-rows: 60px 300px;
+        grid-template-rows: 1fr 4fr;
         margin: 30px;
         padding: 10px;
         border-radius: 15px;
@@ -91,13 +90,14 @@ body {
 
         #announcementsContent {
             display: grid;
-            grid-template-rows: repeat(auto-fit, 1fr);
+            grid-template-rows: repeat(3, 70px);
         }
 
             .announcement{
                 display: grid;
                 grid-template-columns: 20px 1fr;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+                height: 70px;
             }
 
                 .announcement>i {
@@ -115,9 +115,15 @@ body {
                     font-size: 15px;
                     color: grey;
                 }
+
+                .announcementHead {
+                    justify-self: center;
+                    align-self: center;
+                }
                 
                 .announcement>p {
-                    
+                    margin: 0px;
+                    height: 20px;
                 }
 
 h1 {
