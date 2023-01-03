@@ -9,6 +9,7 @@ body {
 #grid-container {
     display: grid;
     grid-template-columns: minmax(120px, 200px) 4fr 1fr;
+    grid-template-rows: minmax(100px, 150px) 400px 400px;
 }
 
     #sidebar {
@@ -45,24 +46,31 @@ body {
             }
 
             #sidebar>div>div:hover {
-                scale: 1.05;
                 cursor: pointer;
+                background-color: #7ab6b0;
             }
 
     #navbar {
         grid-column: 2 / 4;
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: 75px 75px;
     }
 
         #searchbar {
             align-self: center;
             justify-self: center;
             margin: 10px;
+            display: grid;
+            grid-template-columns: 20px 1fr;
         }
 
             #searchbar > i:hover {
                 cursor: pointer;
+            }
+
+            #searchbar > i {
+                align-self: center;
             }
 
             #searchbar > input {
@@ -72,9 +80,52 @@ body {
                 height: 25px;
             }
 
+        #alertsAndName {
+            display: grid;
+            grid-template-columns: 15px 40px 75px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-weight: bold;
+        }
+
+            #alertsAndName > p:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            #alertsAndName > i:hover {
+                cursor: pointer;
+                rotate: 35deg;
+            }
+
+            #alertsAndName > img {
+                width:40px;
+            }
+
+        #profileAndName {
+            display: grid;
+            grid-template-columns: 80px 150px;
+            grid-template-rows: 50px;
+            align-items: center;
+            padding-left: 60px;
+        }
+
+            .profileNamesDiv > p {
+                margin: 0;
+                padding: 5px;
+            }
+
+                .profileNameAt {
+                    font-weight: bold;
+                }
+
         #navButtons {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 150px);
+            justify-content: center;
+            align-items: center;
         }
 
             .navBtn {
@@ -84,6 +135,7 @@ body {
                 font-weight: 500 !important;
                 font-size: 15px;
                 padding: 5px;
+                height: 35  px;
             }
 
             .navBtn:hover {
@@ -107,7 +159,15 @@ body {
             .project {
                 padding: 10px;
                 margin: 25px;
+                display: grid;
+                grid-template-rows: 1fr 2fr 20px;
             }
+
+                .projectIcons {
+                    justify-self: end;
+                    padding-right: 5px;
+                    cursor: pointer;
+                }
 
     #announcements, #trending {
         display: grid;
